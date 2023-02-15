@@ -10,6 +10,7 @@ import {
 } from "@react-pdf/renderer";
 import logo from '../../img/logoVettel.jpg'
 import moment from "moment/moment";
+import React from 'react';
 
 
 const styles = StyleSheet.create({

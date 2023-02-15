@@ -2,6 +2,7 @@ import {AuthContext} from "./AuthContext";
 import AuthReducer from './AuthReducer'
 import {useReducer} from "react";
 import {types} from "../types/types";
+import React from 'react';
 
 const initialState = {
     logged: false

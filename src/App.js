@@ -1,5 +1,6 @@
 import {AppRouter} from "./router/AppRouter";
 import AuthProvider from "./auth/context/AuthProvider";
+import React from 'react';
 
 function App() {
   return (

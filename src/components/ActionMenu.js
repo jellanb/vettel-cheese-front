@@ -9,6 +9,7 @@ import {PaymentDetails} from "./payments/paymentDetails/PaymentDetails";
 import InventoryHooks from "../hooks/inventoryHooks";
 import ProductsHooks from "../hooks/productsHooks";
 import DispatchHooks from "../hooks/disptachHooks";
+import React from 'react';
 
 
 export function ActionMenu({content, setContent}) {

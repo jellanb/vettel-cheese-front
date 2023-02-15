@@ -156,7 +156,7 @@ export function DialogAddPaidItemGrid({
                                         <LocalizationProvider dateAdapter={AdapterDayjs}>
                                             <DatePicker
                                                 label="Quote Date"
-                                                value={quoteDate ?? null}
+                                                value={quoteDate ? null : quoteDate}
                                                 autoFocus
                                                 onChange={handlePaymentDateChange}
                                                 renderInput={(params) => <TextField name="DeliveryName" id="DeliveryName" fullWidth {...params}  />}

@@ -189,7 +189,7 @@ export function DialogAddDispatchItem({open, setOpen, productsGridData, loadPage
                                         <LocalizationProvider dateAdapter={AdapterDayjs}>
                                             <DatePicker
                                                 label="Delivery Date"
-                                                value={newDispatch.deliveryDate ?? null}
+                                                value={newDispatch.deliveryDate ? null : newDispatch.deliveryDate}
                                                 autoFocus
                                                 onChange={handleDeliveryTimeChange}
                                                 renderInput={(params) => <TextField name="DeliveryName" id="DeliveryName" fullWidth {...params}  />}
@@ -200,7 +200,7 @@ export function DialogAddDispatchItem({open, setOpen, productsGridData, loadPage
                                         <LocalizationProvider dateAdapter={AdapterDayjs}>
                                             <DatePicker
                                                 label="Credit Time"
-                                                value={newDispatch.creditTime ?? null}
+                                                value={newDispatch.creditTime ? null : newDispatch.creditTime}
                                                 autoFocus
                                                 onChange={handleCreditTimeChange}
                                                 renderInput={(params) => <TextField name="CreditTime" id="CreditTime" fullWidth {...params}  />}
