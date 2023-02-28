@@ -1,9 +1,9 @@
+import React from 'react';
 import {Fragment} from 'react';
 import {Routes, Route} from 'react-router-dom';
 import { SignIn, SignUp } from "../auth/pages";
 import {AppRoutes} from "../routes/Routes";
 import PrivateRoute from "./PrivateRoute";
-import React from 'react';
 
 
 export const AppRouter = () => {

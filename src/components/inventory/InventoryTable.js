@@ -57,7 +57,7 @@ export default function InventoryTable({itemGridData, loadPage, setLoadPage, pro
         const dateString = moment(dateStr).format('YYYY-MM-DD');
         return dateString
     };
-
+    
     return (
         <React.Fragment>
             <Title>Inventory</Title>
@@ -80,7 +80,7 @@ export default function InventoryTable({itemGridData, loadPage, setLoadPage, pro
                             <TableCell>{row.product.description}</TableCell>
                             <TableCell>{row.product.barcode}</TableCell>
                             <TableCell>{row.quantity}</TableCell>
-                            <TableCell align="right">{`$${row.product.saleAmount}`}</TableCell>
+                            <TableCell align="right">{`$${row.saleAmount}`}</TableCell>
                             <TableCell align="right" onClick={() => handleGridEditItem(row)}>
                                 <Stack direction="row"  spacing={2}>
                                     <IconButton color="info" aria-label="delete">
